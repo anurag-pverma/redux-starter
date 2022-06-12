@@ -1,7 +1,7 @@
 // thunk which will be help us 
 import axios from "axios";
 
-import { LOGIN_ERROR, LOGIN_LOADING, LOGIN_LOADING, LOGIN_SUCCESS, LOGOUT } from "./auth.type";
+import { LOGIN_LOADING, lOGIN_ERROR, LOGIN_SUCCESS, LOGOUT } from "./auth.type";
 
 export const login = (data)=>(dispatch)=>{
     dispatch({ type: LOGIN_LOADING});
