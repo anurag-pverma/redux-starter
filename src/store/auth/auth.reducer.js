@@ -13,7 +13,7 @@ export const  authreducer = (state= initialState, {type , payload})=>{
     switch(type){
 
         case LOGIN_LOADING:{
-            return {...state,loading: true, error: false, };
+            return {...state,loading: true, error: false, };  
         }
         case LOGIN_SUCCESS:{
             return {...state, loading: false, error:false, isAuth:true , token:payload.token};
